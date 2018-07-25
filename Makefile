@@ -83,7 +83,7 @@ link: compile
 else
 
 compile: $(OPATH) $(SRCS) $(HEADERS) 
-	$(CC) $(CFLAGS) $(XCFLAGS) $(SRCS) $(OUTCMD)
+	$(CC) $(CFLAGS) $(XCFLAGS) $(SRCS) $(OUTCMD) -lz -lpthread
 link: compile 
 	@echo "Link performed along with compile"
 
